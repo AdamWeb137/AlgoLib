@@ -211,6 +211,31 @@ let algos = [
         `,
         time:"n*log(n)",
         space:"n"
+    },
+    {
+        name:"Counting Sort",
+        code:`
+            //sorting algorithm used only when array countains only integer in the range 0 to k (exclusive of k)
+            function counting_sort(array,k){
+                let count = new Array(k);
+                for(let i = 0; i < k; i++){
+                    count[i] = 0;
+                }
+                for(let j = 0; j < array.length; j++){
+                    count[array[j]] += 1;
+                }
+                let cur_n = 0;
+                for(let i = 0; i < array.length; i++){
+                    while(count[cur_n] <= 0){
+                        cur_n++;
+                    }
+                    array[i] = cur_n;
+                    count[cur_n]--;
+                }
+            }
+        `,
+        time:"n+k",
+        space:"k"
     }
 ];
 
@@ -237,4 +262,5 @@ set_algo_tags({
     4:["sort", "quadratic", "bubble", "array"],
     5:["sort", "quadratic", "array"],
     6:["sort", "logarithmic", "array","divide","conquer"],
+    7:["linear","sort","integer"]
 });
