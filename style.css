@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    margin:0px;
+}
+
+#header {
+    margin:0px;
+    padding:25px 10px;
+    border-bottom:5px solid white;
+    background-color: rgb(29, 29, 29);
+}
+
+#header h1 {
+    margin:0px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: baseline;
+    /* border:2px solid white; */
+    padding:5px;
+}
+
+.algo {
+    border:2px solid white;
+    margin:5px;
+    padding: 5px;
+    background-color: rgb(29, 29, 29);
+    transition: max-height 1s;
+}
+
+.atitle:hover {
+    cursor: pointer;
+}
+
+.algo_holder {
+    top:0;
+    left:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* .algo_holder:hover:not(.main_algo:hover) {
+    cursor: pointer;
+} */
+
+/* .algo_holder > div:hover{
+    cursor:default;
+} */
+
+
+pre {
+    margin:0px;
+    font-size: 0.8rem;
+    padding:5px;
+    background-color: black;
+}
+
+.code {
+    border:1px solid white;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+input {
+    width:60%;
+    font-size: 1.5rem;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom:10px;
+    justify-content: left;
+    border-bottom:5px solid white;
+}
+
+.search > * {
+    margin:5px;
+}
+
+.button {
+    width:auto;
+    padding:5px;
+    margin:1px 5px;
+    background-color: orange;
+    border-radius: 25px;
+    color:white;
+    user-select: none;
+    text-align: center;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 178, 36);
+}
+
+.button:active{
+    background-color: rgb(218, 141, 0);
+}

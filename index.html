@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AlgoLib</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="algo.js"></script>
+        <script src="search.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <h1>AlgoLib</h1>
+        </div>
+        <div class="search">
+            <p>Search:</p>
+            <input type="text" name="search" id="search">
+        </div>
+        <div class="flex" id="algos"></div>
+        <textarea id="fake" style="display: none;"></textarea>
+        <div class="algo_holder" style="display: none;">
+            <div class="algo main_algo">
+                <h2 class="center"></h2>
+                <p class="center" id="complexity"></p>
+                <pre class="code"><code></code></pre>
+                <div class="button">Copy to Clipboard</div>
+            </div>
+        </div>
+    </body>
+</html>
